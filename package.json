@@ -1,0 +1,35 @@
+{
+  "name": "fastify-grant",
+  "version": "5.4.0",
+  "description": "Grant OAuth Proxy plugin for Fastify",
+  "keywords": [
+    "oauth",
+    "oauth2",
+    "openid",
+    "openid-connect",
+    "authentication",
+    "authorization",
+    "proxy",
+    "middleware",
+    "plugin",
+    "fastify"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/simov/fastify-grant",
+  "author": "Simeon Velichkov <simeonvelichkov@gmail.com> (https://simov.github.io)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simov/fastify-grant.git"
+  },
+  "dependencies": {
+    "grant": "^5.4.0"
+  },
+  "peerDependencies": {
+    "fastify": ">=3.0.0"
+  },
+  "main": "index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
