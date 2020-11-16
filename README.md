@@ -16,7 +16,26 @@ fastify()
   .listen(3000)
 ```
 
-[Example](https://github.com/simov/grant/tree/master/examples/handler-fastify)
+> _[Examples](https://github.com/simov/grant/tree/master/examples)_
+
+## ES Modules and TypeScript
+
+Import Grant in your `.mjs` files:
+
+```js
+import fastify from 'fastify'
+import cookie from 'fastify-cookie'
+import session from 'fastify-session'
+import grant from 'fastify-grant'
+
+fastify()
+  .register(cookie)
+  .register(session, {secret: 'grant', cookie: {secure: false}})
+  .register(grant({/*configuration - see below*/}))
+  .listen(3000)
+```
+
+Grant ships with extensive [type definitions][type-definitions] for TypeScript. However, a few additional type definitions that extend the typings of your HTTP framework of choice can be found [here][grant-types].
 
 # Configuration
 
@@ -576,3 +595,6 @@ Any `dynamic` configuration sent over HTTP GET/POST request overrides any other 
   [profile.json]: https://github.com/simov/grant/blob/master/config/profile.json
   [reserved-keys]: https://github.com/simov/grant/blob/master/config/reserved.json
   [examples]: https://github.com/simov/grant/tree/master/examples
+
+  [grant-types]: https://github.com/simov/grant-types
+  [type-definitions]: https://github.com/simov/grant/blob/master/grant.d.ts
