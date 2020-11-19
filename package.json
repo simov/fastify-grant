@@ -1,6 +1,6 @@
 {
   "name": "fastify-grant",
-  "version": "5.4.6",
+  "version": "5.4.8",
   "description": "Grant OAuth Proxy plugin for Fastify",
   "keywords": [
     "oauth",
@@ -22,7 +22,7 @@
     "url": "https://github.com/simov/fastify-grant.git"
   },
   "dependencies": {
-    "grant": "^5.4.6"
+    "grant": "^5.4.8"
   },
   "peerDependencies": {
     "fastify": ">=3.0.0"
